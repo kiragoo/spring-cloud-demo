@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: microservice-consumer-movie-fegin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8002/eureka/
+  instance:
+    perfer-ip-address: true
+
+
+server:
+  port: 8004
+
