@@ -7,4 +7,4 @@
 #### [chapter1](http://www.ithere.net/kirago/article/128)
 
 ### Spring Cloud 系列之服务注册与发现（二）
-#### [chapter2]()
+#### [chapter2](http://www.ithere.net/kirago/article/129)
