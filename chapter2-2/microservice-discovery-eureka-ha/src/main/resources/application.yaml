@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: microserver-discovery-eureka-ha
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://peer1:8001/eureka/,http://peer2:8002/eureka/
+---
+spring:
+  profiles: peer1
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:8002/eureka/
+#    fetch-registry: true
+#    register-with-eureka: true
+
+---
+spring:
+  profiles: peer2
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka/
+#    fetch-registry: true
+#    register-with-eureka: true
