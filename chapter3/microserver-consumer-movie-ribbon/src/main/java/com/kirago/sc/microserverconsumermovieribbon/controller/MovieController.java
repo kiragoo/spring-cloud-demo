@@ -9,7 +9,7 @@ import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
+import com.kirago.sc.microserverconsumermovieribbon.config.RestTemplateCompoment;
 
 @RestController
 public class MovieController {
@@ -17,7 +17,7 @@ public class MovieController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MovieController.class);
 
     @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplateCompoment restTemplate;
 
     @Autowired
     private LoadBalancerClient loadBalancerClient;
@@ -25,16 +25,8 @@ public class MovieController {
 
     @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id){
-        User user = new User();
-        try{
-           user =  restTemplate.getForObject("http://microservice-provider-user-ribbon/" + id, User.class);
-           return user;
-        }catch (Exception e){
-            LOGGER.debug(">>>>>>>>>>>>>>>>>");
-            e.printStackTrace();
-            LOGGER.debug("<<<<<<<<<<<<<<<<");
-        }
-        return restTemplate.getForObject("http://microservice-provider-user-ribbon/" + id, User.class);
+
+        return this.restTemplate.restTemplate().getForObject("http://microservice-provider-user-ribbon/" + id, User.class);
     }
 
     @GetMapping("/log-user-instance")

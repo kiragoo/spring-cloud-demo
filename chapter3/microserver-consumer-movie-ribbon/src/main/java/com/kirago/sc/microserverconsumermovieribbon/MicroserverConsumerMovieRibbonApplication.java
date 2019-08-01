@@ -13,13 +13,13 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class MicroserverConsumerMovieRibbonApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(MicroserverConsumerMovieRibbonApplication.class, args);
-    }
-
 //    @Bean
 //    @LoadBalanced
 //    public RestTemplate restTemplate(){
 //        return new RestTemplate();
 //    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(MicroserverConsumerMovieRibbonApplication.class, args);
+    }
 }
