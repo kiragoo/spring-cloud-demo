@@ -11,3 +11,6 @@
 
 ### Spring Cloud 系列之服务注册于发现【ha】（三）
 #### [chapter2-2](http://www.ithere.net/kirago/article/130)
+
+### Spring Cloud 系列之负载均衡（四）
+#### [chapter3](http://www.ithere.net/kirago/article/131)
