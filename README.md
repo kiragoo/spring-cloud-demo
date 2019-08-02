@@ -14,3 +14,6 @@
 
 ### Spring Cloud 系列之负载均衡（四）
 #### [chapter3](http://www.ithere.net/kirago/article/131)
+
+### Spring Cloud 系列之负载均衡（五）
+#### [chapter3-2](http://www.ithere.net/kirago/article/135)
