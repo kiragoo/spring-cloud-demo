@@ -17,3 +17,6 @@
 
 ### Spring Cloud 系列之负载均衡（五）
 #### [chapter3-2](http://www.ithere.net/kirago/article/135)
+
+### Spring Cloud 系列之声明式 REST 调用（六）
+#### [chapter4](http://www.ithere.net/kirago/article/136)
