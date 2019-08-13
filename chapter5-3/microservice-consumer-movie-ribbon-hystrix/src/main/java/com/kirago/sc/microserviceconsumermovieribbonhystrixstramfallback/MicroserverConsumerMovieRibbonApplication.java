@@ -1,18 +1,20 @@
-package com.kirago.sc.microserviceprovideruser;
+package com.kirago.sc.microserviceconsumermovieribbonhystrixstramfallback;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
+@EnableHystrix
 @EnableEurekaClient
 @EnableDiscoveryClient
 @SpringBootApplication
-public class MicroserviceProviderUserApplication {
+public class MicroserverConsumerMovieRibbonApplication {
+
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroserviceProviderUserApplication.class, args);
+        SpringApplication.run(MicroserverConsumerMovieRibbonApplication.class, args);
     }
-
 }

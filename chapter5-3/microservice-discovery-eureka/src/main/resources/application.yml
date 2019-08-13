@@ -7,15 +7,18 @@ eureka:
     service-url:
       defaultZone: http://localhost:8000/eureka/
 
-management:
-  endpoints:
-    env:
-      post:
-        enabled: false
-    web:
-      exposure:
-        include: '*'
-    health:
-      show-details: always
-    enabled-by-default:
-      enabled: false
+#management:
+#  endpoints:
+#    env:
+#      post:
+#        enabled: false
+#    web:
+#      exposure:
+#        include: '*'
+#    health:
+#      show-details: always
+#    enabled-by-default:
+#      enabled: false
+#    hystrix:
+#      stream:
+#        enabled: true
