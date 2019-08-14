@@ -1,0 +1,14 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: microservice-hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: microservice-consumer-moive,microservice-consumer-moive-hystrix-fallback-stream
+  cluster-name-expression: "'default'"
