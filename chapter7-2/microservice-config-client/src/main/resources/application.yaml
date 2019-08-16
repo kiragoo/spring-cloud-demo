@@ -1,0 +1,11 @@
+server:
+  port: 8001
+
+#spring:
+#  application:
+#    name: microservice-kirago
+#  cloud:
+#    config:
+#      uri: http://localhost:8000/
+#      profile: dev
+#      label: master
