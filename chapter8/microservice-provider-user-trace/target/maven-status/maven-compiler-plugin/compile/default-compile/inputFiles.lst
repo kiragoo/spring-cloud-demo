@@ -1,0 +1,4 @@
+/Users/kirago/Documents/Github/spring-cloud-demo/chapter8/microservice-provider-user-trace/src/main/java/com/kirago/sc/microservicesimpleprovideruser/entity/User.java
+/Users/kirago/Documents/Github/spring-cloud-demo/chapter8/microservice-provider-user-trace/src/main/java/com/kirago/sc/microservicesimpleprovideruser/repository/UserRepository.java
+/Users/kirago/Documents/Github/spring-cloud-demo/chapter8/microservice-provider-user-trace/src/main/java/com/kirago/sc/microservicesimpleprovideruser/MicroserviceSimpleProviderUserApplication.java
+/Users/kirago/Documents/Github/spring-cloud-demo/chapter8/microservice-provider-user-trace/src/main/java/com/kirago/sc/microservicesimpleprovideruser/controller/UserController.java

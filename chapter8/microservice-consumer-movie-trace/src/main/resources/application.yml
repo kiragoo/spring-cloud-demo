@@ -1,0 +1,13 @@
+user:
+  userServiceUrl: http://localhost:8000/
+
+server:
+  port: 8001
+
+spring:
+  application:
+    name: microservice-consumer-movie-trace
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.sleuth: DEBUG

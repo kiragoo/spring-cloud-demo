@@ -1,0 +1,4 @@
+com/kirago/sc/microservicesimpleprovideruser/repository/UserRepository.class
+com/kirago/sc/microservicesimpleprovideruser/MicroserviceSimpleProviderUserApplication.class
+com/kirago/sc/microservicesimpleprovideruser/entity/User.class
+com/kirago/sc/microservicesimpleprovideruser/controller/UserController.class
