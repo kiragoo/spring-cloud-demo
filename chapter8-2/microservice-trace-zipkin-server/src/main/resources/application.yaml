@@ -1,0 +1,12 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: microservice-trace-zipkin-server
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

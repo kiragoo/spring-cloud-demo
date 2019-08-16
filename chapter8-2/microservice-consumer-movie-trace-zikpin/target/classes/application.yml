@@ -1,0 +1,18 @@
+user:
+  userServiceUrl: http://localhost:8001/
+
+server:
+  port: 8002
+
+spring:
+  application:
+    name: microservice-consumer-movie-trace-zikpin
+  zipkin:
+    base-url: http://localhost:8000  #指定 Zikpin 地址
+  sleuth:
+    percentage: 1.0  #指定采样的请求的百分比
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.sleuth: DEBUG
